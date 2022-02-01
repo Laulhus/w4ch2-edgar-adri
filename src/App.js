@@ -1,8 +1,9 @@
-import { useState } from "react";
+/* import { useState } from "react"; */
 import "./App.css";
+import GameResult from "./GameResult/GameResult";
 
 function App() {
-  const gameWord = "string";
+  /*   const gameWord = "string";
   const [usedLetters, setUsedLetters] = useState([]);
   const abecedary = [
     "A",
@@ -33,7 +34,7 @@ function App() {
     "Z",
   ];
   const [gameStatus, setGameStatus] = useState(null);
-  const [errorCounter, setErrorCounter] = useState(0);
+  const [errorCounter, setErrorCounter] = useState(0); */
 
   return (
     <div className="App">
@@ -73,7 +74,7 @@ function App() {
           <li className="used-letter">B</li>
         </ul>
       </section>
-      <section className="game-result">You're dead!</section>
+      <GameResult />
       <ul className="letters">
         <li className="letter">
           <a href="a">A</a>
