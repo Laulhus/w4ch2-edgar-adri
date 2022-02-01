@@ -30,13 +30,13 @@ Componente GuessWord
 - Contar letras
 - Renderizar posiciones de letras adivinadas.
 
-Componente LetterContainer
+Componente UsedLetter                    ----------------OK     
 - Renderiza un título.
 - Renderiza Letters que le pasan.
 
-Componente Hangman
+Componente Hangman                       ----------------OK
 - Renderizar los elementos al fallar.
 
-Componente Resultado
+Componente Resultado                     ----------------OK
 - Recibe el estado del juego.
 - Renderiza un texto.
