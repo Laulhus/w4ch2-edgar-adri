@@ -1,10 +1,13 @@
-// import { useState } from "react";
-import "./App.css";
+
 import Letter from "./components/Letter/Letter";
+/* import { useState } from "react"; */
+import "./App.css";
+import GameResult from "./GameResult/GameResult";
 
 function App() {
-  // const gameWord = "string";
-  // const [usedLetters, setUsedLetters] = useState([]);
+  /*   const gameWord = "string";
+  const [usedLetters, setUsedLetters] = useState([]);
+
   const abecedary = [
     "A",
     "B",
@@ -33,8 +36,9 @@ function App() {
     "Y",
     "Z",
   ];
-  // const [gameStatus, setGameStatus] = useState(null);
-  // const [errorCounter, setErrorCounter] = useState(0);
+
+  const [gameStatus, setGameStatus] = useState(null);
+  const [errorCounter, setErrorCounter] = useState(0); */
 
   return (
     <div className="App">
@@ -74,7 +78,7 @@ function App() {
           <li className="used-letter">B</li>
         </ul>
       </section>
-      <section className="game-result">You're dead!</section>
+      <GameResult />
       <ul className="letters">
         {abecedary.map((letter) => (
           <Letter letter={letter} />

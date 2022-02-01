@@ -37,6 +37,6 @@ Componente LetterContainer
 Componente Hangman
 - Renderizar los elementos al fallar.
 
-Componente Resultado
+Componente Resultado            OK
 - Recibe el estado del juego.
 - Renderiza un texto.
