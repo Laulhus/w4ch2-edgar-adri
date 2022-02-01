@@ -1,10 +1,10 @@
-
 import { useState } from "react";
 import "./App.css";
 import Letter from "./components/Letter/Letter";
 import GameResult from "./components/GameResult/GameResult";
 import GuessWord from "./components/GuessWord/GuessWord";
 import Hangman from "./components/Hangman/Hangman";
+import UsedLetter from "./components/UsedLetter/UsedLetter";
 
 function App() {
   const gameWord = "prueba";
@@ -40,11 +40,9 @@ function App() {
   // const [gameStatus, setGameStatus] = useState(null);
   // const [errorCounter, setErrorCounter] = useState(0);
 
-
   const clickLetter = (clickedletter) => {
     setUsedLetters(usedLetters.push(clickedletter));
   };
-
 
   return (
     <div className="App">
@@ -57,9 +55,7 @@ function App() {
       <section className="used-letters-container">
         <h2>Used letters</h2>
         <ul className="used-letters">
-          <li className="used-letter">B,&nbsp;</li>
-          <li className="used-letter">B,&nbsp;</li>
-          <li className="used-letter">B</li>
+          <UsedLetter usedLetter={"M"} />
         </ul>
       </section>
       <GameResult />
