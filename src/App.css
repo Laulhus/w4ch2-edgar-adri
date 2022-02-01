@@ -23,6 +23,7 @@ svg > * {
   list-style: none;
   margin: 0;
   padding: 0;
+  gap: 5px;
 }
 .guess-letter {
   width: 30px;
@@ -49,11 +50,14 @@ svg > * {
   padding: 0;
   list-style: none;
   display: flex;
+  gap: 5px;
+  text-align: center;
 }
-.letter a {
+.letter {
   text-decoration: none;
   color: inherit;
-  font-size: 32px;
-  margin-left: 5px;
-  margin-right: 5px;
+  font-size: 27px;
+  background-color: rgb(114, 255, 243);
+  width: 40px;
+  cursor: pointer;
 }
