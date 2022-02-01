@@ -1,9 +1,9 @@
-import { useState } from "react";
+/* import { useState } from "react"; */
 import "./App.css";
 import GameResult from "./GameResult/GameResult";
 
 function App() {
-  const gameWord = "string";
+  /*   const gameWord = "string";
   const [usedLetters, setUsedLetters] = useState([]);
   const abecedary = [
     "A",
@@ -34,7 +34,7 @@ function App() {
     "Z",
   ];
   const [gameStatus, setGameStatus] = useState(null);
-  const [errorCounter, setErrorCounter] = useState(0);
+  const [errorCounter, setErrorCounter] = useState(0); */
 
   return (
     <div className="App">
