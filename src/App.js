@@ -1,12 +1,14 @@
-// import { useState } from "react";
+
+import { useState } from "react";
 import "./App.css";
 import Letter from "./components/Letter/Letter";
 import GameResult from "./components/GameResult/GameResult";
+import GuessWord from "./components/GuessWord/GuessWord";
 import Hangman from "./components/Hangman/Hangman";
 
 function App() {
-  // const gameWord = "string";
-  // const [usedLetters, setUsedLetters] = useState([]);
+  const gameWord = "prueba";
+  const [usedLetters, setUsedLetters] = useState([]);
   const abecedary = [
     "A",
     "B",
@@ -38,17 +40,19 @@ function App() {
   // const [gameStatus, setGameStatus] = useState(null);
   // const [errorCounter, setErrorCounter] = useState(0);
 
+
+  const clickLetter = (clickedletter) => {
+    setUsedLetters(usedLetters.push(clickedletter));
+  };
+
+
   return (
     <div className="App">
       <div className="hangman-container">
         <Hangman errorCounter={7} />
       </div>
       <ul className="guess-letters">
-        <li className="guess-letter empty"></li>
-        <li className="guess-letter">A</li>
-        <li className="guess-letter empty"></li>
-        <li className="guess-letter">A</li>
-        <li className="guess-letter empty"></li>
+        <GuessWord word={gameWord} usedLetters={usedLetters} />
       </ul>
       <section className="used-letters-container">
         <h2>Used letters</h2>
@@ -61,7 +65,7 @@ function App() {
       <GameResult />
       <ul className="letters">
         {abecedary.map((letter) => (
-          <Letter letter={letter} />
+          <Letter key={letter} letter={letter} actionOnClick={clickLetter} />
         ))}
       </ul>
     </div>
