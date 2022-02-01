@@ -1,0 +1,42 @@
+Datos:
+
+- Palabra a adivinar. (Array de Letters)
+- Letras usadas. (Array de Letters)
+- Abecedario. (Array de Letters)
+- EstadoJuego (Booleano)
+- Contador errores. (Number)
+
+Acciones: 
+
+- App:  Crea Letters en UsedLetters (Letras usadas).
+	Actualiza el renderizado de Hangman y GuessWord
+	Manda acción a Letters
+	Crea el mensaje de resultado final.
+	
+Responsabilidades:
+
+Componente App
+- Renderiza todo
+- Manda la función a invocar a Letter.
+- Manda número de errores a Hangman.
+- Manda las letras adivinadas a GuessWord.
+
+Componente Letter
+- Renderizarse
+- Recoger clic y invocar una función que le pasen.
+
+Componente GuessWord
+- Recibir una palabra
+- Contar letras
+- Renderizar posiciones de letras adivinadas.
+
+Componente LetterContainer
+- Renderiza un título.
+- Renderiza Letters que le pasan.
+
+Componente Hangman
+- Renderizar los elementos al fallar.
+
+Componente Resultado
+- Recibe el estado del juego.
+- Renderiza un texto.
