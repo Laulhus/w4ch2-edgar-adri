@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import GameResult from "./GameResult/GameResult";
 
 function App() {
   const gameWord = "string";
@@ -73,7 +74,7 @@ function App() {
           <li className="used-letter">B</li>
         </ul>
       </section>
-      <section className="game-result">You're dead!</section>
+      <GameResult />
       <ul className="letters">
         <li className="letter">
           <a href="a">A</a>
